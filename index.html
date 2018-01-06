@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" href="hw_square.PNG" type="image/gif" sizes="16x16">
+	<link rel="icon" href="img/hw_square.PNG" type="image/gif" sizes="16x16">
 </head>
 
 <body>
 	<header>
-		
+		<a id="top"></a>		
 		<div class="parallax">
 			<div class="box">
 				<div class="border">Hannah Wang</div>
@@ -27,11 +27,18 @@
 			<div class="headings">
 				<ul>
 					<li><a href="#AboutMe">ABOUT ME</a></li>
-					<li><a href="#Experience">EXPERIENCE</a></li>
-					<li><a href="#Projects">PROJECTS</a></li>
+					<li><a href="#topResume">RESUME</a></li>
+					<li><a href="#topProjects">PROJECTS</a></li>
 				</ul>
 			</div>
 		</div>
+<!--
+		<div class="homeribbon">
+						<a href="#top"> <img src="hw_square.PNG" alt="HW"> </a>
+			<div class="rectangle"></div>
+
+			<div class="triangles"></div>
+		</div> -->
 	</header>
 
 	<div class="aboutmeheading">
@@ -40,21 +47,31 @@
 
 	<main>
 		<div class="aboutme">
-			<img class="photo" src="photo.jpg" alt="Hannah Wang" style="width: 25%;">
+			<img class="photo" src="img/photo.jpg" alt="Hannah Wang" style="width: 25%;">
 			<p>Hi! I'm Hannah and I'm a first-year student at the University of Waterloo in the Computer Science and Business Administration (Wilfred Laurier University) Double Degree program. I'm interested in software development and also enjoy exploring business and economics on the side. Feel free to browse my website featuring my professional experience and projects!</p>
 		</div>
 	</main>
 
 
 	<div class="parallax2">
-		<h1 id="Experience">Experience</h1>
+		<a id="topResume" style="position: absolute; top: 0;"></a>
+		<h1 id="Resume">Resume</h1>
 	</div>
 
 
-	<main>
-		<div class="experience">
-			<h2>Industrial and Commerical Bank of China (Canada)</h2>
-			<h3>Compliance Intern | June 2017 - August 2017</h3>
+	<div class="resume">
+		<div class="resumecolumn left">
+			<h2>Education</h2>
+			<h3>University of Waterloo & Wilfred Laurier Univeristy</h3>
+			<h4>Candidate for Bachelor's of Computer Science (UW) and Bachelor's of Business Administration (WLU) Double Degree | 2017 - 2022</h4>
+
+			<h3 style="padding-top: 15px">Bayview Secondary School</h3>
+			<h4>International Baccalaureate Diploma Programme | 2013 - 2017</h4>
+
+			<h2>Experience</h2>
+
+			<h3>Industrial and Commerical Bank of China (Canada)</h3>
+			<h4>Compliance Intern | June 2017 - August 2017</h4>
 			<ul>
 				<li>Reviewed and edited policies from the company's various departments</li>
 				<li>Collaborated with department heads to resolve issues found in policies</li>
@@ -62,41 +79,74 @@
 				<li>Conducted research and financial analysis on the bank's competitors</li>
 			</ul>
 
-			<h2>Target Alpha Canada</h2>
-			<h3>Chief Financial Officer | August 2015 - June 2017 | <a href="http://targetalphacanada.ca">targetalphacanada.ca</a></h3>
+			<h3>Target Alpha Canada</h3>
+			<h4>Chief Financial Officer | August 2015 - June 2017 | <a href="http://targetalphacanada.ca">targetalphacanada.ca</a></h4>
 			<ul>
-				<li>Managed finances for entire nationwide organization (budgeting, paying bills, bookkeeping)</li>
+				<li>Managed finances for entire nationwide organization</li>
 				<li>Planned and organized competitions and conferences (e.g. Stock Pitch Conference and Competition)</li>
-				<li>Contacted prospective sponsors in-person and via email</li>
-				<li>Created sponsorship package, school information package, business cards</li>
-				<li>Regularly connected with provincial executives to monitor progress and provide guidance</li>
+				<li>Created sponsorship package and contacted prospective sponsors</li>
+				<li>Monitored progress and provided guidance to provincial executives</li>
 			</ul>
 
-			<h2>Bayview Secondary School FBLA</h2>
-			<h3>President | June 2016 - June 2017</h3>
+			<h3>Bayview Secondary School FBLA</h3>
+			<h4>President | June 2016 - June 2017</h4>
 			<ul>
 				<li>Directed club promotion at beginning of school year</li>
 				<li>Created promotional materials (e.g. banner, business cards), receiving record-breaking number of new members with 120 applications</li>
 				<li>Communicated with teacher supervisors, school administration, and FBLA Ontario</li>
-				<li>Hosted meetings with executive team and trainers</li>
-				<li>Supervised weekly club meetings</li>
+				<li>Hosted meetings with executive team and supervised weekly club meetings</li>
 				<li>Led the planning of club events, e.g. practice competitions</li>
 			</ul>
 
-			<h2>Bayview Secondary School Relay for Life</h2>
-			<h3>Senior Finance and Sponsorships Executive | October 2015 - June 2017</h3>
+			<h3>Canada's Wonderland</h3>
+			<h4>Sales Associate | July 2016 - September 2016</h4>
 			<ul>
-				<li>Contacted prospective sponsors in-person and via email</li>
-				<li>Drafted and finalized sponsorship letter</li>
-				<li>Prepared budget for food and activities</li>
-				<li>Mentored Junior Finance and Sponsorships Executives</li>
+				<li>Promoted photo products and store merchandise to customers</li>
+				<li>Facilitated transactions in fast-paced environment</li>
 			</ul>
-
 		</div>
-	</main>
+		<div class="resumecolumn right"> 
+			<h2>Skills</h2>
+			<h3>Languages:</h3>
+			<p>Java, XML, HTML, CSS, Racket, C</p>
+
+			<h3>Tools and Technologies:</h3>
+			<p>Android Studio, Github, Adobe Photoshop, Microsoft Excel</p>
+
+			<h2>Projects</h2>
+			<h3>WATERL% Grade Calculator</h3>
+			<h4>Java + XML in Android Studio</h4>
+			<p>Mobile app that calculates user's current overall grade in UWaterloo courses based on user inputted grades. Saves user's grade data.</p>
+
+			<h3>Personal Website</h3>
+			<h4>HTML + CSS</h4>
+			<p>Designed and built responsive website from scratch, featuring resume and portfolio.</p>
+
+			<h2 style="margin-bottom: 5px;">Awards</h2>
+			<h3 style="display: inline;">President's Scholarship of Distinction</h3>
+			<h4 style="display: inline;">from the University of Waterloo (2017)</h4>
+			<p>95%+ admission average</p>
+
+			<h3 style="display: inline;">Chen Lu Shen Scholarship</h3>
+			<h4 style="display: inline;">from the Chinese-Canadian Intercultural Association (2017)</h4>
+			<p>Academic excellence and extracurricular involvement</p>
+
+			<h3 style="display: inline;">DECA ICDC</h3>
+			<h4 style="display: inline;">1st place (2016)</h4>
+			<p>International business competition</p>
+
+			<h3 style="display: inline;">FBLA OPLC</h3>
+			<h4 style="display: inline;">1st place (2016)</h4>
+			<p>Provincial business competition</p>
+		</div>
+
+		<p id="resumelink" style="text-align: center;"><a href="files/Resume.pdf" target="_blank">PDF version</a></p>
+
+	</div>
 
 
 	<div class="parallax2">
+		<a id="topProjects" style="position: absolute; top: 0;"></a>
 		<h1 id="Projects" >Projects</h1>
 	</div>
 
@@ -104,30 +154,30 @@
 		<div class="projects">
 			<div class="projectbox">
 				<div class="projecthover">
-					<img class="gradecalculatorphoto" src="waterloo.PNG" alt="Grade Calculator" style="width: 100%;">
-					<a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank"> 
+					<img class="gradecalculatorphoto" src="img/waterloo.PNG" alt="Grade Calculator" style="width: 100%;">
+					<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank"> 
 						 <div class="overlay"><p>Mobile application that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades.</p></div></a>
 				</div>
-				<h2>WATERL% Grade Calculator</h2>
+				<h2><a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">WATERL% Grade Calculator</a></h2>
 				<p>Java + XML in Android Studio</p>
 			<!--	<p>Mobile application made in Android Studio using Java and XML that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades. </p> -->
 			</div>
 			<div class="projectbox">
 				<div class="projecthover">
-					<img class="extendedessayphoto" src="tesla.jpg" alt="Extended Essay" style="width: 100%;">
-					<a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank"> 
+					<img class="extendedessayphoto" src="img/tesla.jpg" alt="Extended Essay" style="width: 100%;">
+					<a href="files/ExtendedEssay.pdf" target="_blank"> 
 						 <div class="overlay"><p>Microeconomics research essay investigating and analyzing the effect of Ontario's modernized Electrical Vehicle Incentive Program (EVIP) on the car market in Richmond Hill, Ontario.</p></div></a>
 				</div>
-				<h2>Microeconomics Research Essay</h2>
+				<h2><a href="files/ExtendedEssay.pdf" target="_blank">Microeconomics Research Essay</a></h2>
 			<!--	<p>Microeconomics research essay investigating and analyzing the effect of Ontario's modernized Electrical Vehicle Incentive Program (EVIP) on the car market in Richmond Hill, Ontario. Conducted extensive primary and secondary research and in-depth analysis of impacts on various stakeholders.</p> -->
 			</div>
 			<div class="projectbox">
 				<div class="projecthover">
-					<img class="decaphoto" src="deca.png" alt="DECA" style="width: 100%;">
+					<img class="decaphoto" src="img/deca.png" alt="DECA" style="width: 100%;">
 					<a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank"> 
 						 <div class="overlay"><p>Business report and presentation of an employee engagement plan for the Royal Bank of Canada. Designed an innovative proposal based on research results. <br/> 1st place at DECA ICDC (international competition).</p></div></a>
 				</div>
-				<h2>DECA RBC Report & Presentation</h2>	
+				<h2><a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank">DECA RBC Report & Presentation</a></h2>	
 			<!--	<p>30-page business report and 15-minute presentation of an employee engagement plan for the Royal Bank of Canada. Designed an innovative proposal based on research results. 1st place at DECA ICDC (international high school business competition), Finance Operations Research category.</p> -->
 			</div>
 		</div>
