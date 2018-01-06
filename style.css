@@ -1,0 +1,380 @@
+body {
+	margin: 0px;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+header {
+	position: relative;
+	text-align: center;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("mountains.jpg");
+
+    /* Set a specific height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;`
+ }
+
+
+.name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 72px;
+	line-height: 1;
+	padding: 70px 50px;
+	border-top: 5px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+}
+
+.border {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 72px;
+	line-height: 1;
+	padding: 70px 50px;
+	border: 5px solid transparent;
+	border-image: linear-gradient(to right, #ffffff 0%, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff 100%);
+	border-image-slice: 1;
+	border-width: 0 0 5px 0;
+}
+
+
+.icons {
+	position: absolute;
+	left: 1%;
+	width: 100%;
+	margin-top: 52px;
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	letter-spacing: 15px;
+}
+
+.icons a {
+	text-decoration: none;
+	color: white;
+}
+
+.icons a:hover {
+	color: #216F90;
+}
+
+.headings {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+}
+
+.headings ul {
+	list-style-type: none;
+}
+
+.headings li {
+	display: inline;
+}
+
+.headings li a {
+	padding: 15px;
+	color: #216F90;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 18px;
+}
+
+.headings li a:hover {
+    color: white;
+}
+
+
+main {
+	max-width: 800px;
+	margin: auto;
+	padding: 0px 40px;
+}
+
+h1 {
+	color: white;
+	font-family: "Montserrat", Helvetica, sans-serif;
+
+	text-align: center;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, transparent 20%, white 50%, transparent 80%, transparent 100%);
+	border-image-slice: 1;
+	border-width: 0 0 1px 0;
+	text-transform: uppercase;
+}
+
+/*
+.aboutme {
+	position: relative;
+	top: 10px;
+	max-width: 800px;
+	padding-bottom: 50px;
+}
+
+
+.aboutme h1 {
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, #216F90 0%, #216F90 50%, transparent 75%);
+	border-image-slice: 1;
+	border-width: 0 0 1px 0;
+}
+
+*/
+
+.aboutme {
+	padding-bottom: 20px;
+}
+
+.aboutmeheading h1 {
+	color: #216F90;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, transparent 20%, #216F90 50%, transparent 80%, transparent 100%);
+	border-image-slice: 1;
+	border-width: 0 0 1px 0;
+}
+
+.photo {
+	border-radius: 100%;
+	float: left;
+	margin-right: 5%;
+}
+
+
+.aboutme p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("mountains.jpg");
+
+    /* Set a specific height */
+    min-height: 120px; 
+ 
+
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Experience {
+	width: 100%;
+}
+
+.experience {
+	width: 100%;
+}
+
+/*
+.experience h1 {
+	text-align: right;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to left, #216F90 0%, #216F90 50%, transparent 75%);
+	border-image-slice: 1;
+	border-width: 0 0 1px 0;
+}
+*/
+
+.experience h2 {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 20px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-top: 10px;
+	color: #216F90;
+}
+
+.experience h3 {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 16px;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.experience ul {
+	list-style-type: circle;
+}
+
+.experience a {
+	color: black;
+}
+
+.experience a:hover {
+	color: #216F90;
+}
+
+.experience p {
+	margin-bottom: 20px;
+}
+
+/*
+.projects h1 {
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, #216F90 0%, #216F90 50%, transparent 75%);
+	border-image-slice: 1;
+	border-width: 0 0 1px 0;
+}
+
+*/
+#Projects {
+	width: 100%;
+}
+
+.projects {
+	padding: 30px 0px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.projectbox {
+    float: left;
+    width: 33.33%;
+    padding: 10px; 
+}
+
+/* Clear floats after the columns */
+.projects:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.projectbox h2 {
+	margin-bottom: 5px;
+}
+
+.projectbox p {
+	margin-top: 0;
+	text-align: center;
+	font-style: italic;
+}
+
+.projecthover {
+	position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  vertical-align: center;
+}
+
+.overlay p {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 16px;
+	margin: 0;
+	padding: 3%;
+	line-height: 1.15;
+	font-style: normal;
+}
+
+.projecthover:hover .overlay {
+  opacity: 1;
+}
+
+.projects h2 {
+	font-family: Montserrat, Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	color: white;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url("mountains.jpg");
+
+    /* Set a specific height */
+    min-height: 200px; 
+ display:flex;
+ justify-content: center;
+align-items: center;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactinfo {
+	text-align: left;
+	display: block;
+}
+
+.contactinfo a {
+	color: white;
+	text-decoration: none;
+}
+
+.contactinfo a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+	.projectbox {
+		width: 50%;
+	}
+}
+
+@media (max-width: 540px) {
+	.projectbox {
+		width: 100%;
+	}
+}
+
