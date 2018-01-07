@@ -61,7 +61,7 @@ header {
 	position: absolute;
 	left: 1%;
 	width: 100%;
-	margin-top: 52px;
+	margin-top: 50px;
 	text-align: center;
 	color: white;
 	font-size: 36px;
@@ -271,7 +271,7 @@ h1 {
 
 .resume h2 {
 	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	text-transform: uppercase;
 	border-bottom: 1.5px solid black;
 	width: 100%;
@@ -282,7 +282,7 @@ h1 {
 
 .resume h3 {
 	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 5px;
@@ -291,7 +291,7 @@ h1 {
 
 .resume h4 {
 	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: normal;
@@ -610,6 +610,13 @@ footer {
 		color: white;
 		font-size: 28px;
 		letter-spacing: 10px;
+	}
+
+	.photo {
+		border-radius: 100%;
+		width: 45%;
+		float: none;
+		margin: 0;
 	}
 }
 
