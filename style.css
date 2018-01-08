@@ -349,11 +349,11 @@ h1 {
 	margin: auto;
 }
 
-/*
+
 
 * {
 	box-sizing: border-box;
-} */
+} 
 
 .projectbox {
     float: left;
@@ -483,9 +483,6 @@ footer {
 }
 */
 @media screen and (max-width: 800px) {
-	/*.projectbox {
-		width: 50%;
-	} */
 
 	.photodiv {
 		width: 100%;
