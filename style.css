@@ -59,18 +59,18 @@ header {
 
 .icons {
 	position: absolute;
-	left: 1%;
+	left: 0;
 	width: 100%;
 	margin-top: 50px;
 	text-align: center;
 	color: white;
 	font-size: 36px;
-	letter-spacing: 15px;
 }
 
 .icons a {
 	text-decoration: none;
 	color: white;
+	margin: 15px;
 }
 
 .icons a:hover {
@@ -559,13 +559,16 @@ footer {
 
 	.icons {
 		position: absolute;
-		left: 1%;
+		left: 0;
 		width: 100%;
 		margin-top: 43px;
 		text-align: center;
 		color: white;
 		font-size: 28px;
-		letter-spacing: 10px;
+	}
+
+	.icons a {
+		margin: 10px;
 	}
 
 	.headings {
@@ -614,13 +617,16 @@ footer {
 
 	.icons {
 		position: absolute;
-		left: 2%;
+		left: 0;
 		width: 100%;
 		margin-top: 15px;
 		text-align: center;
 		color: white;
 		font-size: 28px;
-		letter-spacing: 10px;
+	}
+
+	.icons a {
+		margin: 0;
 	}
 
 	.photo {
