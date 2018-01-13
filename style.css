@@ -50,7 +50,7 @@ header {
 	font-size: 72px;
 	line-height: 1;
 	padding: 70px 50px;
-	border: 5px solid transparent;
+	border-style: solid;
 	border-image: linear-gradient(to right, #ffffff 0%, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff 100%);
 	border-image-slice: 1;
 	border-width: 0px 5px 5px 5px;
