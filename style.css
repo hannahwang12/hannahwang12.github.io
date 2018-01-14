@@ -243,15 +243,15 @@ h1 {
 }
 
 .left {
-	width: 70%;
+	width: 68%;
 }
 
 .right {
-	width: 30%;
+	width: 32%;
 }
 
 /* Clear floats after the columns */
-.resume:after {
+.resumesection:after {
     content: "";
     display: table;
     clear: both;
