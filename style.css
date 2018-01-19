@@ -154,7 +154,8 @@ h1 {
 	font-family: "Montserrat", Helvetica, sans-serif;
 
 	text-align: center;
-	border: 1px solid transparent;
+	border-width: 1px;
+	border-style: solid;
 	border-image: linear-gradient(to right, transparent 0%, transparent 20%, white 50%, transparent 80%, transparent 100%);
 	border-image-slice: 1;
 	border-width: 0 0 1px 0;
@@ -331,6 +332,12 @@ h1 {
 	border: 1px solid #216F90;
 	color: #216F90;
 }
+
+
+span {
+	color: #216F90;
+}
+
 
 
 /*
