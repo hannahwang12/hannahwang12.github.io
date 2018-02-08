@@ -209,6 +209,25 @@ h1 {
 	padding-bottom: 25px;
 }
 
+.icons2 {
+	width: 100%;
+	text-align: center;
+	color: #a6a6a6;
+	font-size: 30px;
+	margin-top: -25px;
+	padding-bottom: 25px;
+}
+
+.icons2 a {
+	text-decoration: none;
+	color: #a6a6a6;
+	margin: 15px;
+}
+
+.icons2 a:hover {
+	color: #216F90;
+}
+
 .parallax2 {
     /* The image used */
     background-image: url("img/mountains.jpg");
