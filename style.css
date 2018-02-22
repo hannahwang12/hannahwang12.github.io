@@ -163,23 +163,6 @@ h1 {
 	width: 100%;
 }
 
-/*
-.aboutme {
-	position: relative;
-	top: 10px;
-	max-width: 800px;
-	padding-bottom: 50px;
-}
-
-
-.aboutme h1 {
-	border: 1px solid transparent;
-	border-image: linear-gradient(to right, #216F90 0%, #216F90 50%, transparent 75%);
-	border-image-slice: 1;
-	border-width: 0 0 1px 0;
-}
-
-*/
 
 .aboutme {
 	padding-bottom: 20px;
