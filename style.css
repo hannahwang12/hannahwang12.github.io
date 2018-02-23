@@ -651,6 +651,10 @@ footer {
 	#resumelink {
 		margin-top: 15px;
 	}
+
+	.modal-content {
+	  	width: 30%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -664,6 +668,10 @@ footer {
 	.projectbox p {
 		line-height: 1.15;
 		font-size: 16px;
+	}
+
+	.modal-content {
+	  	width: 40%;
 	}
 }
 
@@ -721,6 +729,10 @@ footer {
 
 	.projectbox {
 		padding: 20px;
+	}
+
+	.modal-content {
+	  	width: 70%;
 	}
 
 }
