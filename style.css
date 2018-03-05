@@ -368,6 +368,7 @@ span {
     float: left;
     width: 33.33%;
     padding: 10px; 
+    padding-bottom: 20px;
 }
 
 /* Clear floats after the columns */
@@ -555,6 +556,11 @@ span {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+#sudoku {
+	outline: 1px solid #aaa;
+	outline-offset: -1px;
 }
 
 

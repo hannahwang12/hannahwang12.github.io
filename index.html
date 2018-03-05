@@ -82,10 +82,57 @@
 
 
 	<div class="projects">
+
+		<!-- Sudoku -->
 		<div class="projectbox">
 			<div class="projecthover">
-				<img class="audiovisualizer" src="img/audiovisualizer.png" alt="Audio Visualizer" style="width: 100%;">
-				<!-- <a href="http://hannahwang12.github.io/AudioVisualizer/" target="_blank">  -->
+				<img id="sudoku" src="img/restarant.JPG" alt="Sudoku" style="width: 100%;">
+					<div class="overlay" onclick="openRestarantModal()">
+					 	<div class="text">
+						 	<p>Mobile application for Android and iOS where users can take a picture of a restaurant sign and instantly view Google ratings and reviews. Uses Google Cloud Vision API and Google Places API</p>
+						 	<p style="font-style: italic;">Javascript in React Native</p>
+						</div>
+					</div>
+			 	</a>
+			</div>
+			<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/reSTARant/" target="_blank">reSTARant</a></h2>
+
+			<div id="restarantModal" class="modal">
+				<span class="close cursor" onclick="closeRestarantModal()">&times;</span>
+				<div class="modal-content" style="width:65%">
+					<img src="img/restarantapp.JPG" style="width:100%">
+					<div class="description">	
+						<p>Take a picture of the restaurant sign, then view the Google rating and reviews</p>
+				      	<h2 style="padding-bottom:5px">
+				      		<a href="https://github.com/hannahwang12/reSTARant" target="_blank" style="width:auto; text-transform: none">reSTARant 
+				      			<i class="fa fa-github" style="width:auto"></i> 
+				      		</a>
+				      	</h2> 
+			      	</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Sudoku -->
+		<div class="projectbox">
+			<div class="projecthover">
+				<img id="sudoku" src="img/sudoku.png" alt="Sudoku" style="width: 100%;">
+				<a href="http://hannahwang12.github.io/Sudoku/" target="_blank"> 
+					<div class="overlay">
+					 	<div class="text">
+						 	<p>Web application for the classic Sudoku puzzle with a multiplayer feature (coming soon) allowing players to compete or collaborate.</p>
+						 	<p style="font-style: italic;">Javascript + HTML + CSS</p>
+						</div>
+					</div>
+			 	</a>
+			</div>
+			<h2><a href="http://hannahwang12.github.io/Sudoku/" target="_blank">Multiplayer Sudoku</a></h2>
+		</div>
+
+		<!-- Audio Visualizer -->
+		<div class="projectbox" style="padding-bottom: 20.5px;">
+			<div class="projecthover">
+				<img src="img/audiovisualizer.png" alt="Audio Visualizer" style="width: 100%;">
 					<div class="overlay" onclick="openAVModal()">
 					 	<div class="text">
 						 	<p>Web application that produces a mesmerizing visual representation of inputted audio files from audio frequency data using Web Audio API. Features 3 different animation styles.</p>
@@ -94,7 +141,7 @@
 					</div>
 			 	</a>
 			</div>
-			<h2><a href="http://hannahwang12.github.io/AudioVisualizer/">Audio Visualizer</a></h2>
+			<h2><a href="http://hannahwang12.github.io/AudioVisualizer/" target="_blank">Audio Visualizer</a></h2>
 
 			<div id="AVModal" class="modal">
 				<span class="close cursor" onclick="closeAVModal()">&times;</span>
@@ -115,9 +162,10 @@
 			</div>
 		</div>
 
+		<!-- Colour Clock -->
 		<div class="projectbox">
 			<div class="projecthover">
-				<img class="colourclock" src="img/clock.png" alt="Colour Clock" style="width: 100%;">
+				<img src="img/clock.png" alt="Colour Clock" style="width: 100%;">
 				<a href="http://hannahwang12.github.io/ColourClock/" target="_blank"> 
 					<div class="overlay">
 					 	<div class="text">
@@ -127,13 +175,13 @@
 					</div>
 			 	</a>
 			</div>
-			<h2><a href="http://hannahwang12.github.io/ColourClock/">Colour Clock</a></h2>
+			<h2><a href="http://hannahwang12.github.io/ColourClock/" target="_blank">Colour Clock</a></h2>
 		</div>
 
+		<!-- Grade Calculator -->
 		<div class="projectbox">
 			<div class="projecthover">
-				<img class="gradecalculatorphoto" id="gradecalculatorphoto" src="img/waterloo.png" alt="Grade Calculator" style="width: 100%;">
-				<!-- <a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">  -->
+				<img id="gradecalculatorphoto" src="img/waterloo.png" alt="Grade Calculator" style="width: 100%;">
 					<div class="overlay" onclick="openModal();currentSlide(1)">
 					 	<div class="text">
 						 	<p>Mobile application that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades.</p>
@@ -190,6 +238,21 @@
 
 			  	</div>
 			</div>		
+		</div>
+
+		<div class="projectbox">
+			<div class="projecthover">
+				<img class="decaphoto" src="img/deca.png" alt="DECA" style="width: 100%;">
+				<a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank"> 
+					<div class="overlay">
+					 	<div class="text">
+					 		<p>Business report and presentation of an employee engagement plan for the Royal Bank of Canada. Designed an innovative proposal based on research results.</p>
+					 		<p style="font-style: italic;">1st place at DECA ICDC (international competition).</p>
+					 	</div>
+					</div>
+				</a>
+			</div>
+			<h2><a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank">DECA RBC Report & Presentation</a></h2>	
 		</div>
 	</div>	
 
@@ -334,6 +397,13 @@
 		document.getElementById('AVModal').style.display = "none";
 	}
 
+	function openRestarantModal() {
+		document.getElementById('restarantModal').style.display = "block";
+	}
+
+	function closeRestarantModal() {
+		document.getElementById('restarantModal').style.display = "none";
+	}
 	// Open the Modal
 	function openModal() {
 	  document.getElementById('myModal').style.display = "block";
