@@ -92,7 +92,8 @@ header {
 }
 
 .headings li a {
-	padding: 15px;
+	padding-bottom: 5px;
+	margin: 15px;
 	color: #216F90;
 	text-decoration: none;
 	font-family: Montserrat;
@@ -101,8 +102,7 @@ header {
 
 .headings li a:hover {
     color: white;
-    border: 1px solid white;
-    font-weight: bold;
+    border-bottom: 1px solid white;
 }
 
 .homeribbon {
