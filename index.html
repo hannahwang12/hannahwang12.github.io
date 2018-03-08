@@ -90,7 +90,8 @@
 					<div class="overlay" onclick="openRestarantModal()">
 					 	<div class="text">
 						 	<p>Mobile application for Android and iOS where users can scan a restaurant sign and instantly view Google ratings and reviews. Uses Google Cloud Vision API and Google Places API</p>
-						 	<p style="font-style: italic;">Javascript in React Native</p>
+						 	<p style="padding-top: 0">- StarterHacks 2018 -</p>
+						 	<p style="font-style: italic;">React Native</p>
 						</div>
 					</div>
 			 	</a>
@@ -371,72 +372,6 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript" src="script.js"></script>
+
 </body>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-	  $("a").on('click', function(event) {
-	    if (this.hash !== "") {
-	      event.preventDefault();
-	      event.stopPropagation();
-	      var hash = this.hash;
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 800, function() {
-	        window.location.hash = hash;
-	      });
-	    }
-	  });
-	});
-
-	function openAVModal() {
-		document.getElementById('AVModal').style.display = "block";
-	}
-
-	function closeAVModal() {
-		document.getElementById('AVModal').style.display = "none";
-	}
-
-	function openRestarantModal() {
-		document.getElementById('restarantModal').style.display = "block";
-	}
-
-	function closeRestarantModal() {
-		document.getElementById('restarantModal').style.display = "none";
-	}
-	// Open the Modal
-	function openModal() {
-	  document.getElementById('myModal').style.display = "block";
-	}
-
-	// Close the Modal
-	function closeModal() {
-	  document.getElementById('myModal').style.display = "none";
-	}
-
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	// Next/previous controls
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("mySlides");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	    slides[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
-	}
-
-
-</script>
