@@ -83,193 +83,233 @@
 
 	<div class="projects">
 
-		<!-- ClassWatch -->
-		<div class="projectbox">
-			<div class="projecthover">
-				<img src="img/classwatch.JPG" alt="ClassWatch" style="width: 100%;">
-				<a href="http://uwclasswatch.com/" target="_blank"> 
-					<div class="overlay">
+		<div class="tab">
+			<button class="tablinks active" onclick="openProjectsTab(event, 'coding')">Coding Projects</button>
+			<button class="tablinks" onclick="openProjectsTab(event, 'business')">Business Projects</button>
+		</div>
+
+		<div id="coding" class="tabcontent">
+
+			<!-- ClassWatch -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/classwatch.JPG" alt="ClassWatch" style="width: 100%;">
+					<a href="http://uwclasswatch.com/" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Web application with 800+ users for UWaterloo students to view classes and receive email notifications when spots are available in sections they are "watching".</p>
+								<p style="font-style: italic;">React, Node, Express, Firebase</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/ClassWatch/" target="_blank">UW CLASSWATCH</a></h2>
+			</div>
+
+			<!-- reSTARant -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/restarant.JPG" alt="reSTARant" style="width: 100%;">
+					<div class="overlay" onclick="openRestarantModal()">
 						<div class="text">
-							<p>Web application with 800+ users for UWaterloo students to view classes and receive email notifications when spots are available in sections they are "watching".</p>
-							<p style="font-style: italic;">React, Node, Express, Firebase</p>
+							<p>Mobile application for Android and iOS where users can scan a restaurant sign and instantly view Google ratings and reviews. Uses Google Cloud Vision API and Google Places API</p>
+							<p style="padding-top: 0">- StarterHacks 2018 -</p>
+							<p style="font-style: italic;">React Native</p>
 						</div>
 					</div>
-				</a>
-			</div>
-			<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/ClassWatch/" target="_blank">UW CLASSWATCH</a></h2>
-		</div>
+				</div>
+				<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/reSTARant/" target="_blank">reSTARant</a></h2>
 
-		<!-- reSTARant -->
-		<div class="projectbox">
-			<div class="projecthover">
-				<img src="img/restarant.JPG" alt="reSTARant" style="width: 100%;">
-				<div class="overlay" onclick="openRestarantModal()">
-					<div class="text">
-						<p>Mobile application for Android and iOS where users can scan a restaurant sign and instantly view Google ratings and reviews. Uses Google Cloud Vision API and Google Places API</p>
-						<p style="padding-top: 0">- StarterHacks 2018 -</p>
-						<p style="font-style: italic;">React Native</p>
+				<div id="restarantModal" class="modal">
+					<span class="close cursor" onclick="closeRestarantModal()">&times;</span>
+					<div class="modal-content" style="width:65%">
+						<img src="img/restarantapp.JPG" style="width:100%">
+						<div class="description">	
+							<p>Take a picture of the restaurant sign, then instantly view the Google rating and reviews</p>
+									<h2 style="padding-bottom:5px">
+										<a href="https://github.com/hannahwang12/reSTARant" target="_blank" style="width:auto; text-transform: none">reSTARant 
+											<i class="fa fa-github" style="width:auto"></i> 
+										</a>
+									</h2> 
+								</div>
 					</div>
 				</div>
 			</div>
-			<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/reSTARant/" target="_blank">reSTARant</a></h2>
+			
+			<!-- Sudoku -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img class="whiteBackground" src="img/sudokuoriginal.png" alt="Sudoku" style="width: 100%;">
+					<a href="http://hannahwang12.github.io/Sudoku/" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Web application for the classic Sudoku puzzle with a multiplayer feature (coming soon) allowing players to compete or collaborate.</p>
+								<p style="font-style: italic;">Javascript, HTML, CSS</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<h2><a href="http://hannahwang12.github.io/Sudoku/" target="_blank">Sudoku</a></h2>
+			</div>
 
-			<div id="restarantModal" class="modal">
-				<span class="close cursor" onclick="closeRestarantModal()">&times;</span>
-				<div class="modal-content" style="width:65%">
-					<img src="img/restarantapp.JPG" style="width:100%">
-					<div class="description">	
-						<p>Take a picture of the restaurant sign, then instantly view the Google rating and reviews</p>
-				      	<h2 style="padding-bottom:5px">
-				      		<a href="https://github.com/hannahwang12/reSTARant" target="_blank" style="width:auto; text-transform: none">reSTARant 
-				      			<i class="fa fa-github" style="width:auto"></i> 
-				      		</a>
-				      	</h2> 
-			      	</div>
+			<!-- Audio Visualizer -->
+			<div class="projectbox" style="padding-bottom: 20.5px;">
+				<div class="projecthover">
+					<img src="img/audiovisualizer.png" alt="Audio Visualizer" style="width: 100%;">
+						<div class="overlay" onclick="openAVModal()">
+							<div class="text">
+								<p>Web application that produces a mesmerizing visual representation of inputted audio files from audio frequency data using Web Audio API. Features 3 different animation styles.</p>
+								<p style="font-style: italic;">Javascript, HTML, CSS</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<h2><a href="http://hannahwang12.github.io/AudioVisualizer/" target="_blank">Audio Visualizer</a></h2>
+
+				<div id="AVModal" class="modal">
+					<span class="close cursor" onclick="closeAVModal()">&times;</span>
+					<div class="modal-content" style="width:70%">
+						<img src="img/linedots.PNG" style="width:100%">
+						<div class="description">	
+							<p>Line animation and dots animation</p>
+									<h2 style="padding-bottom:5px">
+										<a href="https://github.com/hannahwang12/AudioVisualizer" target="_blank" style="width:auto">Audio Visualizer 
+											<i class="fa fa-github" style="width:auto"></i> 
+										</a>
+									</h2> 
+									<p style="margin-bottom: 20px; padding-top:5px">
+										<a id="AVButton" href="https://hannahwang12.github.io/AudioVisualizer" target="_blank" style="width:auto">Try it here!</a>
+									</p>
+								</div>
+					</div>
 				</div>
 			</div>
-		</div>
+
+			<!-- Colour Clock -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/clock.png" alt="Colour Clock" style="width: 100%;">
+					<a href="http://hannahwang12.github.io/ColourClock/" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Web application that displays an analog clock with the page's background colour code in rgb or hex corresponding to the current time.</p>
+								<p style="font-style: italic;">Javascript, HTML, CSS</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<h2><a href="http://hannahwang12.github.io/ColourClock/" target="_blank">Colour Clock</a></h2>
+			</div>
+
+			<!-- Grade Calculator -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img id="gradecalculatorphoto" src="img/waterloo.png" alt="Grade Calculator" style="width: 100%;">
+						<div class="overlay" onclick="openModal();currentSlide(1)">
+							<div class="text">
+								<p>Mobile application that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades.</p>
+								<p style="font-style: italic;">Java & XML in Android Studio</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<h2><a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">WATERL%: Grade Calculator</a></h2>
 		
-		<!-- Sudoku -->
-		<div class="projectbox">
-			<div class="projecthover">
-				<img class="whiteBackground" src="img/sudokuoriginal.png" alt="Sudoku" style="width: 100%;">
-				<a href="http://hannahwang12.github.io/Sudoku/" target="_blank"> 
-					<div class="overlay">
-					 	<div class="text">
-						 	<p>Web application for the classic Sudoku puzzle with a multiplayer feature (coming soon) allowing players to compete or collaborate.</p>
-						 	<p style="font-style: italic;">Javascript, HTML, CSS</p>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<img src="img/gc1.png" style="width:100%">
+							<div class="description">
+									<p>Main menu</p>
+									<h2> 
+										<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
+											WATERL%: Grade Calculator <i class="fa fa-github"></i>
+										</a>
+									</h2>
+								</div>
 						</div>
-					</div>
-			 	</a>
+
+						<div class="mySlides">
+								<img src="img/gc2.png" style="width:100%; border-bottom: 2px solid #a6a6a6">
+							<div class="description">
+									<p>Calculate and save grades</p>
+									<h2> 
+										<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
+											WATERL%: Grade Calculator <i class="fa fa-github"></i>
+										</a>
+									</h2>
+								</div>
+						</div>
+
+						<div class="mySlides">
+								<img src="img/gc3.png" style="width:100%; border-bottom: 2px solid #a6a6a6">
+								<div class="description">
+									<p>Customized for each course with assignments, exams, weightings, etc.</p>
+									<h2> 
+										<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
+											WATERL%: Grade Calculator <i class="fa fa-github"></i>
+										</a>
+									</h2>
+								</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						</div>
+				</div>		
 			</div>
-			<h2><a href="http://hannahwang12.github.io/Sudoku/" target="_blank">Sudoku</a></h2>
 		</div>
 
-		<!-- Audio Visualizer -->
-		<div class="projectbox" style="padding-bottom: 20.5px;">
-			<div class="projecthover">
-				<img src="img/audiovisualizer.png" alt="Audio Visualizer" style="width: 100%;">
-					<div class="overlay" onclick="openAVModal()">
-					 	<div class="text">
-						 	<p>Web application that produces a mesmerizing visual representation of inputted audio files from audio frequency data using Web Audio API. Features 3 different animation styles.</p>
-						 	<p style="font-style: italic;">Javascript, HTML, CSS</p>
+		<div id="business" class="tabcontent">
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/fablefurniture.JPG" alt="Fable Furniture" style="width: 100%;">
+					<a href="https://docs.google.com/presentation/d/18iINa2xoFGrzseH-ZqTU1GCrsRimHnTZb44zywKHijY/edit?usp=sharing" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Worked with a team to design a business plan for a new business venture, Fable Furniture, a company that repurposes unused and unwanted books into beautiful and functional furniture pieces.</p>
+							</div>
 						</div>
-					</div>
-			 	</a>
-			</div>
-			<h2><a href="http://hannahwang12.github.io/AudioVisualizer/" target="_blank">Audio Visualizer</a></h2>
-
-			<div id="AVModal" class="modal">
-				<span class="close cursor" onclick="closeAVModal()">&times;</span>
-				<div class="modal-content" style="width:70%">
-					<img src="img/linedots.PNG" style="width:100%">
-					<div class="description">	
-						<p>Line animation and dots animation</p>
-				      	<h2 style="padding-bottom:5px">
-				      		<a href="https://github.com/hannahwang12/AudioVisualizer" target="_blank" style="width:auto">Audio Visualizer 
-				      			<i class="fa fa-github" style="width:auto"></i> 
-				      		</a>
-				      	</h2> 
-				      	<p style="margin-bottom: 20px; padding-top:5px">
-				      		<a id="AVButton" href="https://hannahwang12.github.io/AudioVisualizer" target="_blank" style="width:auto">Try it here!</a>
-				      	</p>
-			      	</div>
+					</a>
 				</div>
+				<h2><a href="https://docs.google.com/presentation/d/18iINa2xoFGrzseH-ZqTU1GCrsRimHnTZb44zywKHijY/edit?usp=sharing" target="_blank">New Venture Project: Fable Furniture</a></h2>	
 			</div>
-		</div>
 
-		<!-- Colour Clock -->
-		<div class="projectbox">
-			<div class="projecthover">
-				<img src="img/clock.png" alt="Colour Clock" style="width: 100%;">
-				<a href="http://hannahwang12.github.io/ColourClock/" target="_blank"> 
-					<div class="overlay">
-					 	<div class="text">
-						 	<p>Web application that displays an analog clock with the page's background colour code in rgb or hex corresponding to the current time.</p>
-						 	<p style="font-style: italic;">Javascript, HTML, CSS</p>
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/td.JPG" alt="TD" style="width: 100%;">
+					<a href="https://docs.google.com/presentation/d/1FuzZbwFxOyQGbE9yWQB_gu9EFLsZnimTuI9URc2Usz0/edit?usp=sharing" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Consulting case presentation for TD Bank to utilize new technologies to enhance their customer banking experience.</p>
+								<p>Proposal featured partnering with a fintech startup to incorporate an AI personal financial assistant in the TD mobile app.</p>
+							</div>
 						</div>
-					</div>
-			 	</a>
+					</a>
+				</div>
+				<h2><a href="https://docs.google.com/presentation/d/1FuzZbwFxOyQGbE9yWQB_gu9EFLsZnimTuI9URc2Usz0/edit?usp=sharing" target="_blank">TD Consulting Case</a></h2>	
 			</div>
-			<h2><a href="http://hannahwang12.github.io/ColourClock/" target="_blank">Colour Clock</a></h2>
-		</div>
 
-		<!-- Grade Calculator -->
-		<div class="projectbox">
-			<div class="projecthover">
-				<img id="gradecalculatorphoto" src="img/waterloo.png" alt="Grade Calculator" style="width: 100%;">
-					<div class="overlay" onclick="openModal();currentSlide(1)">
-					 	<div class="text">
-						 	<p>Mobile application that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades.</p>
-						 	<p style="font-style: italic;">Java & XML in Android Studio</p>
+			<div class="projectbox">
+				<div class="projecthover">
+					<img class="decaphoto" src="img/deca.png" alt="DECA" style="width: 100%;">
+					<a href="https://drive.google.com/open?id=1XVh_oXfg1Ca02uHj323L4YO1LW0A1SiF" target="_blank"> 
+						<div class="overlay">
+							<div class="text">
+								<p>Business report and presentation of an employee engagement plan for the Royal Bank of Canada. Designed an innovative proposal based on research results.</p>
+								<p style="font-style: italic;">1st place at DECA ICDC (international competition).</p>
+							</div>
 						</div>
-					</div>
-			 	</a>
+					</a>
+				</div>
+				<h2><a href="https://drive.google.com/open?id=1XVh_oXfg1Ca02uHj323L4YO1LW0A1SiF" target="_blank">DECA RBC Report & Presentation</a></h2>	
 			</div>
-			<h2><a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">WATERL%: Grade Calculator</a></h2>
-	
-
-			<div id="myModal" class="modal">
-				<span class="close cursor" onclick="closeModal()">&times;</span>
-				<div class="modal-content">
-
-			    <div class="mySlides">
-			    	<img src="img/gc1.png" style="width:100%">
-			     	<div class="description">
-			      		<p>Main menu</p>
-			      		<h2> 
-			      			<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
-			      				WATERL%: Grade Calculator <i class="fa fa-github"></i>
-			      			</a>
-			      		</h2>
-			  	  	</div>
-			    </div>
-
-			    <div class="mySlides">
-			      	<img src="img/gc2.png" style="width:100%; border-bottom: 2px solid #a6a6a6">
-			     	<div class="description">
-			      		<p>Calculate and save grades</p>
-			      		<h2> 
-			      			<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
-			      				WATERL%: Grade Calculator <i class="fa fa-github"></i>
-			      			</a>
-			      		</h2>
-			  	  	</div>
-			    </div>
-
-			    <div class="mySlides">
-			      	<img src="img/gc3.png" style="width:100%; border-bottom: 2px solid #a6a6a6">
-			      	<div class="description">
-			      		<p>Customized for each course with assignments, exams, weightings, etc.</p>
-			      		<h2> 
-			      			<a href="https://github.com/hannahwang12/WaterlooGradeCalculator" target="_blank">
-			      				WATERL%: Grade Calculator <i class="fa fa-github"></i>
-			      			</a>
-			      		</h2>
-			  	  	</div>
-			    </div>
-
-			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-			  	</div>
-			</div>		
 		</div>
 
-		<!-- <div class="projectbox">
-			<div class="projecthover">
-				<img class="decaphoto" src="img/deca.png" alt="DECA" style="width: 100%;">
-				<a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank"> 
-					<div class="overlay">
-					 	<div class="text">
-					 		<p>Business report and presentation of an employee engagement plan for the Royal Bank of Canada. Designed an innovative proposal based on research results.</p>
-					 		<p style="font-style: italic;">1st place at DECA ICDC (international competition).</p>
-					 	</div>
-					</div>
-				</a>
-			</div>
-			<h2><a href="https://drive.google.com/open?id=0B-dMrJlCi2a6a2xlX1hkdTR2Smc" target="_blank">DECA RBC Report & Presentation</a></h2>	
-		</div> -->
 	</div>	
 
 

@@ -101,8 +101,8 @@ header {
 }
 
 .headings li a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+	color: white;
+	border-bottom: 1px solid white;
 }
 
 .homeribbon {
@@ -358,7 +358,41 @@ span {
 	margin: auto;
 }
 
+.tab {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
 
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+	padding-bottom: 5px;
+	margin: 10px 30px;
+	transition: 0.3s;
+	font-family: Montserrat;
+	font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	color: #216F90;
+	border-bottom: 1px solid #216F90;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	color: #216F90;
+	border-bottom: 1px solid #216F90;
+}
+
+/* Style the tab content */
+.tabcontent {
+	padding: 6px 12px;
+}
 
 * {
 	box-sizing: border-box;
