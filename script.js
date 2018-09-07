@@ -42,6 +42,15 @@ function openRestarantModal() {
 function closeRestarantModal() {
 	document.getElementById('restarantModal').style.display = "none";
 }
+
+function openClaireModal() {
+	document.getElementById('claireModal').style.display = "block";
+}
+
+function closeClaireModal() {
+	document.getElementById('claireModal').style.display = "none";
+}
+
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
