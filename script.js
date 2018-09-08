@@ -70,6 +70,7 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
+  console.log(n);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("mySlides");
@@ -83,4 +84,30 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+var claireSlideIndex = 1;
+showClaireSlides(claireSlideIndex);
+
+// Next/previous controls
+function plusClaireSlides(n) {
+  showClaireSlides(claireSlideIndex += n);
+
+}
+
+function showClaireSlides(n) {
+  console.log(n)
+  var i;
+  var slides = document.getElementsByClassName("claireSlides");
+  var dots = document.getElementsByClassName("claireSlides");
+  if (n > slides.length) {claireSlideIndex = 1}
+  if (n < 1) {claireSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[claireSlideIndex-1].style.display = "block";
+  dots[claireSlideIndex-1].className += " active";
 }

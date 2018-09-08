@@ -94,7 +94,7 @@
 			<div class="projectbox">
 				<div class="projecthover">
 					<img src="img/claire.JPG" alt="claire" style="width: 100%;">
-					<div class="overlay" onclick="openClaireModal();currentSlide(1)">
+					<div class="overlay" onclick="openClaireModal();">
 						<div class="text">
 							<p>AI chatbot for senior citizens to combat the growing issue of loneliness; provides analytics for family and caregivers to monitor the senior’s wellbeing based on chat messages using natural language processing</p>
 							<p style="padding-top: 0">- Hack the 6ix 2018 Finalist -</p>
@@ -108,7 +108,7 @@
 					<span class="close cursor" onclick="closeClaireModal()">&times;</span>
 					<div class="modal-content" style="width: 70%">
 
-						<div class="mySlides">
+						<div class="claireSlides">
 							<img src="img/claire login.JPG" style="width:100%">
 							<div class="description">
 									<p>Login page featuring simple UI</p>
@@ -120,7 +120,7 @@
 								</div>
 						</div>
 
-						<div class="mySlides">
+						<div class="claireSlides">
 								<img src="img/claire chatbot.JPG" style="width:100%; border-bottom: 2px solid #a6a6a6">
 							<div class="description">
 									<p>AI chatbot</p>
@@ -132,7 +132,7 @@
 								</div>
 						</div>
 
-						<div class="mySlides">
+						<div class="claireSlides">
 								<img src="img/claire dashboard.JPG" style="width:100%; border-bottom: 2px solid #a6a6a6">
 								<div class="description">
 									<p>Dashboard of analytics for family members and caregivers to monitor wellbeing</p>
@@ -144,8 +144,8 @@
 								</div>
 						</div>
 
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<a class="prev" onclick="plusClaireSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusClaireSlides(1)">&#10095;</a>
 
 						</div>
 				</div>		
@@ -266,7 +266,7 @@
 			<div class="projectbox">
 				<div class="projecthover">
 					<img id="gradecalculatorphoto" src="img/waterloo.png" alt="Grade Calculator" style="width: 100%;">
-						<div class="overlay" onclick="openModal();currentSlide(1)">
+						<div class="overlay" onclick="openModal();">
 							<div class="text">
 								<p>Mobile app that calculates the user's current overall grade in UWaterloo courses based on user inputted grades. Specific calculation algorithms for each course based on course outline. Saves user inputted grades and calculated grades.</p>
 								<p style="font-style: italic;">Java & XML in Android Studio</p>
