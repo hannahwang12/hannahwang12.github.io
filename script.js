@@ -51,6 +51,14 @@ function closeClaireModal() {
 	document.getElementById('claireModal').style.display = "none";
 }
 
+function openLiftModal() {
+	document.getElementById('liftModal').style.display = "block";
+}
+
+function closeLiftModal() {
+	document.getElementById('liftModal').style.display = "none";
+}
+
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -110,4 +118,30 @@ function showClaireSlides(n) {
   }
   slides[claireSlideIndex-1].style.display = "block";
   dots[claireSlideIndex-1].className += " active";
+}
+
+var liftSlideIndex = 1;
+showLiftSlides(liftSlideIndex);
+
+// Next/previous controls
+function plusLiftSlides(n) {
+  showLiftSlides(liftSlideIndex += n);
+
+}
+
+function showLiftSlides(n) {
+  console.log(n)
+  var i;
+  var slides = document.getElementsByClassName("liftSlides");
+  var dots = document.getElementsByClassName("liftSlides");
+  if (n > slides.length) {liftSlideIndex = 1}
+  if (n < 1) {liftSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[liftSlideIndex-1].style.display = "block";
+  dots[liftSlideIndex-1].className += " active";
 }

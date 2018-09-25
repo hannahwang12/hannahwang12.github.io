@@ -62,7 +62,7 @@
 	<main>
 		<div class="aboutme">
 			<div class="photodiv"><img class="photo" src="img/photo1.jpg" alt="Hannah Wang"></div>
-			<p>Hi! I'm Hannah and I'm a second-year student at the University of Waterloo in the Computer Science and Business Administration (Wilfrid Laurier University) Double Degree program. I'm interested in software development and also enjoy exploring business and economics on the side. Feel free to browse my personal website!</p>
+			<p>Hi! I'm Hannah and I'm a second-year student at the University of Waterloo in the Computer Science and Business Administration (Wilfrid Laurier University) Double Degree program. I love full-stack web/mobile development and I enjoy constantly learning new things through working on personal projects. Outside of coding, I'm also interested in finance, economics, tennis, and cats. Feel free to browse my personal website!</p>
 
 		</div>
 		<div class="icons2">
@@ -89,6 +89,52 @@
 		</div>
 
 		<div id="coding" class="tabcontent active">
+			<!-- lift -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/lift.JPG" alt="lift" style="width: 100%;">
+					<div class="overlay" onclick="openLiftModal();">
+						<div class="text">
+							<p>Fitbit app to automatically track and store workout data (e.g. reps of each exercise) using device’s accelerometer sensor; displays user data on Vue webpage to visualize workout progress and trends</p>
+							<p style="padding-top: 0">- Hack the North 2018 Finalist -</p>
+							<p style="font-style: italic;">Fitbit OS SDK, Vue.js, Firebase</p>
+						</div>
+					</div>
+				</div>
+				<h2 style="text-transform: none"><a href="http://github.com/hannahwang12/lift/" target="_blank">LIFT</a></h2>
+
+				<div id="liftModal" class="modal">
+					<span class="close cursor" onclick="closeLiftModal()">&times;</span>
+					<div class="modal-content" style="width: 70%">
+
+						<div class="liftSlides">
+							<img src="img/lift home.JPG" style="width:100%; border-bottom: 2px solid #a6a6a6">
+							<div class="description">
+									<p>Home screen with simple UI optimized for Fitbit</p>
+									<h2> 
+										<a href="https://github.com/hannahwang12/lift" target="_blank">lift <i class="fa fa-github"></i>
+										</a>
+									</h2>
+								</div>
+						</div>
+
+						<div class="liftSlides">
+							<img src="img/lift dashboard.JPG" style="width:100%; border-bottom: 2px solid #a6a6a6">
+							<div class="description">
+									<p>Dashboard to visualize workout progress and trends</p>
+									<h2> 
+										<a href="https://github.com/hannahwang12/lift" target="_blank">lift <i class="fa fa-github"></i>
+										</a>
+									</h2>
+								</div>
+						</div>
+
+						<a class="prev" onclick="plusLiftSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusLiftSlides(1)">&#10095;</a>
+
+					</div>
+				</div>	
+			</div>
 
 			<!-- claire -->
 			<div class="projectbox">
@@ -147,7 +193,7 @@
 						<a class="prev" onclick="plusClaireSlides(-1)">&#10094;</a>
 						<a class="next" onclick="plusClaireSlides(1)">&#10095;</a>
 
-						</div>
+					</div>
 				</div>		
 			</div>
 
@@ -247,7 +293,7 @@
 			</div>
 
 			<!-- Colour Clock -->
-			<!-- <div class="projectbox">
+			<div class="projectbox">
 				<div class="projecthover">
 					<img src="img/clock.png" alt="Colour Clock" style="width: 100%;">
 					<a href="http://hannahwang12.github.io/ColourClock/" target="_blank"> 
@@ -260,7 +306,7 @@
 					</a>
 				</div>
 				<h2><a href="http://hannahwang12.github.io/ColourClock/" target="_blank">Colour Clock</a></h2>
-			</div> -->
+			</div>
 
 			<!-- Grade Calculator -->
 			<div class="projectbox">
@@ -323,6 +369,15 @@
 						</div>
 				</div>		
 			</div>
+
+			<!-- coming soon -->
+			<div class="projectbox">
+				<div class="projecthover">
+					<img src="img/coming soon.JPG" alt="coming soon" style="width: 100%;">
+				</div>
+				<h2>COMING SOON!</h2>
+			</div>
+
 		</div>
 
 		<div id="business" class="tabcontent">
