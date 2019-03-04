@@ -78,7 +78,6 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  console.log(n);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("mySlides");
@@ -104,7 +103,6 @@ function plusClaireSlides(n) {
 }
 
 function showClaireSlides(n) {
-  console.log(n)
   var i;
   var slides = document.getElementsByClassName("claireSlides");
   var dots = document.getElementsByClassName("claireSlides");
@@ -130,7 +128,6 @@ function plusLiftSlides(n) {
 }
 
 function showLiftSlides(n) {
-  console.log(n)
   var i;
   var slides = document.getElementsByClassName("liftSlides");
   var dots = document.getElementsByClassName("liftSlides");

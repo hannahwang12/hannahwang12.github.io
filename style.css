@@ -105,15 +105,6 @@ header {
 	border-bottom: 1px solid white;
 }
 
-.homeribbon {
-	position: fixed;
-	z-index: 998;
-	left: 10%;
-	top: 0px;
-	width: 80px;
-	text-align: center;
-}
-
 .rectangle {
 	width: 100%;
 	height: 100px;
@@ -121,26 +112,6 @@ header {
 	top: 0;
 	left: 0;
 	background-color: #216F90;
-}
-
-.homeribbon img {
-	width: 90%;
-	position: absolute;
-	z-index: 999;
-	top: 20px;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-
-.triangles {
-	width: 0;
-	height: 0;
-	border-bottom: 20px solid transparent;
-	border-left: 40px solid #216F90;
-	border-right: 40px solid #216F90;
-	position: absolute;
-	top: 100px;
-	left: 0;
 }
 
 main {
@@ -199,7 +170,7 @@ h1 {
 	color: #a6a6a6;
 	font-size: 30px;
 	margin-top: -25px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 }
 
 .icons2 a {
@@ -213,118 +184,30 @@ h1 {
 }
 
 .parallax2 {
-    /* The image used */
-    background-image: url("img/mountains.jpg");
+	/* The image used */
+	background-image: url("img/mountains.jpg");
 
-    /* Set a specific height */
-    min-height: 120px; 
- 
+	/* Set a specific height */
+	min-height: 120px; 
 
-    width: 100%;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+	width: 100%;
 
-    display:flex;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	display:flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 
-.resume {
-	max-width: 1000px;
-	margin: auto;
-	padding-bottom: 40px;
-}
-
-.resumecolumn {
-    float: left;
-    padding: 25px 20px; 
-}
-
-.left {
-	width: 32%;
-}
-
-.right {
-	width: 68%;
-}
-
-/* Clear floats after the columns */
-.resumesection:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-/*
-.experience h1 {
-	text-align: right;
-	border: 1px solid transparent;
-	border-image: linear-gradient(to left, #216F90 0%, #216F90 50%, transparent 75%);
-	border-image-slice: 1;
-	border-width: 0 0 1px 0;
-}
-*/
-
-.resume h2 {
-	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 24px;
-	text-transform: uppercase;
-	/* border-bottom: 1px solid black; */
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: -5px;
-	font-weight: normal;
-}
-
-.resume h3 {
-	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 16px;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 5px;
-	color: #216F90;
-	font-weight: 600;
-}
-
-.resume h4 {
-	font-family: "Montserrat", Helvetica, sans-serif;
-	font-size: 15px;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-weight: normal;
-}
-
-.resume ul {
-	list-style-type: circle;
-	margin-top: 0;
-	margin-bottom: 10px;
-	padding-left: 20px;
-}
-
-.resumecolumn a {
-	color: black;
-}
-
-.resume a:hover {
-	color: #216F90;
-	text-decoration: underline;
-}
-
-.resume p {
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-
-.resume b {
-	font-weight: 900 !important;
+#resumelink {
+	margin: 20px 0 50px 0;
 }
 
 #resumelink a {
@@ -334,7 +217,7 @@ h1 {
 	font-family: Montserrat;
 	text-align: center;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 #resumelink	a:hover {
@@ -342,22 +225,9 @@ h1 {
 	color: #216F90;
 }
 
-
 span {
 	color: #216F90;
 }
-
-
-
-/*
-.projects h1 {
-	border: 1px solid transparent;
-	border-image: linear-gradient(to right, #216F90 0%, #216F90 50%, transparent 75%);
-	border-image-slice: 1;
-	border-width: 0 0 1px 0;
-}
-
-*/
 
 .projects {
 	padding: 30px 0px;
@@ -786,7 +656,6 @@ footer {
 	.modal-content {
 	  	width: 70%;
 	}
-
 }
 
 @media only screen and (max-height: 400px) {
