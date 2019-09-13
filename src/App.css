@@ -2,6 +2,10 @@
   color: grey;
 }
 
+.App a:hover {
+  color:#1890ff;
+}
+
 .ant-dropdown-menu {
   box-shadow: none !important;
 }
