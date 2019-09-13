@@ -1,0 +1,60 @@
+#experience {
+  max-width: 800px;
+  margin: auto;
+}
+
+#experience h2 {
+  margin-bottom: 0;
+}
+
+#experience .ant-timeline {
+  margin-left: 24px;
+  margin-top: 60px;
+}
+
+#experience .ant-timeline .link {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+#experience .ant-timeline-item {
+  padding-bottom: 30px;
+}
+
+#experience .ant-timeline-item:hover {
+  color: black;
+  transition: all 0.3s;
+}
+
+#experience .ant-timeline-item:hover .timeline-dot {
+  height: 70px;
+  transition: all 0.3s;
+}
+
+#experience .ant-timeline-item-last {
+  padding-bottom: 0;
+}
+
+#experience .ant-timeline-item-last .ant-timeline-item-tail {
+  display: list-item;
+  height: calc(100% - 20px);
+}
+
+.timeline-dot {
+  height: 60px;
+}
+
+.timeline-dot.blueprint {
+  height: 60px;
+  padding: 4px;
+}
+
+#experience .ant-timeline-item-content {
+  text-align: left;
+  margin-left: 48px;
+  top: -22px;
+}
+
+#experience .ant-timeline-item-content ul {
+  padding-left: 18px;
+}

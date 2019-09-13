@@ -1,0 +1,29 @@
+/* .about {
+  max-width: 700px;
+  margin: auto;
+} */
+
+#about .about-content {
+  display: flex;
+  align-items: center;
+}
+
+#about .profile-pic {
+  height: 240px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+#about p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  #about .about-content {
+    flex-direction: column;
+  }
+
+  #about .profile-pic {
+    margin-right: 0;
+  }
+}

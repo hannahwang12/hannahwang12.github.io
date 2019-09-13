@@ -1,0 +1,93 @@
+#projects {
+  max-width: 832px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects h1 {
+  align-self: flex-start;
+  margin-top: 0 !important;
+}
+
+#projects .ant-tabs {
+  max-width: 100%;
+  text-align: center;
+  color: grey;
+}
+
+#projects .ant-tabs .ant-tabs-tab-active {
+  color: #40a9ff;
+}
+
+#projects .ant-tabs .ant-tabs-ink-bar {
+  background-color: #40a9ff;
+}
+
+#projects .ant-tabs .ant-tabs-bar {
+  margin-bottom: 30px;
+}
+
+#projects .ant-list {
+  margin: 4px;
+}
+
+#projects .ant-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects .ant-list-item {
+  height: 100%;
+  padding-bottom: 18px;
+}
+
+#projects .ant-card {
+  height: calc(100% - 16px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .ant-card:hover {
+  box-shadow: 1px 1px 8px grey;
+}
+
+#projects .ant-card .ant-card-body {
+  height: 100%;
+}
+
+#projects .ant-card .ant-card-meta-title {
+  white-space: unset;
+  margin-bottom: 8px;
+}
+
+#projects .ant-card .tags {
+  margin-bottom: 4px;
+}
+
+#projects .ant-card .ant-tag {
+  margin-bottom: 4px;
+}
+
+#projects .ant-card .ant-card-meta-description.description2 {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#projects .ant-card .ant-card-actions {
+  background-color: unset;
+}
+
+#projects .ant-card .ant-card-actions a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .ant-card .ant-card-actions .action-icon svg {
+  height: 20px;
+  margin: 2px;
+}
