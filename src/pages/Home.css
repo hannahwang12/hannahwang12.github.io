@@ -23,13 +23,12 @@
 
 .home h1 {
   font-size: 90px;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: bold;
   text-align: center;
   margin: 0 8px;
   line-height: 120%;
   margin-bottom: 18px;
-  /* color: grey; */
 }
 
 @media (max-width: 900px) {
