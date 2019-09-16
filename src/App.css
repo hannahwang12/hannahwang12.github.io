@@ -86,7 +86,7 @@
 }
 
 .bottom-bar .icons {
-  width: fit-content;
+  width: auto;
 }
 
 .bottom-bar .icons .icon {

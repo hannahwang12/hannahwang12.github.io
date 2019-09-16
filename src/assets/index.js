@@ -2,6 +2,9 @@ export { default as Resume } from './HannahWang_Resume.pdf';
 export { default as Hannah } from './images/hannah.jpg';
 
 // coding projects
+export { default as CCBrowse } from './images/charity browse.png';
+export { default as CCUser } from './images/charity user-view.png';
+export { default as CCCharity } from './images/charity charity-view.png';
 export { default as ARWorld } from './images/ar world.png';
 export { default as ARWorldWeb } from './images/ar world web.png';
 export { default as Classwatch } from './images/classwatch.png';

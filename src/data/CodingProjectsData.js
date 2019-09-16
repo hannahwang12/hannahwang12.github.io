@@ -2,6 +2,19 @@ import * as Img from '../assets';
 
 const CodingProjectsData = [
   {
+    cover: [Img.CCBrowse, Img.CCUser, Img.CCCharity],
+    title: 'CharityChain',
+    tags: ['Blockchain', 'React', 'Firebase'],
+    description: 'Tracking charity spendings on blockchain to help users make more informed donations and to increase transparency and accountability of charities; enables users to trace exactly what their donation is spent on',
+    description2: {
+      award: false,
+      text: 'Hack the North 2019'
+    },
+    links: {
+      github: 'https://github.com/hannahwang12/CharityChain',
+    }
+  },
+  {
     cover: [Img.ARWorld, Img.ARWorldWeb],
     title: 'AR World',
     tags: ['AR Core', 'Android Studio', 'Kotlin', 'AWS', 'React', 'NodeJS', 'MongoDB'],
@@ -11,7 +24,7 @@ const CodingProjectsData = [
       text: 'PennApps XX Best AR/VR Hack'
     },
     links: {
-      github: 'https://github.com/hannahwang12/classwatch-v2',
+      github: 'https://github.com/hannahwang12/ar-world',
     }
   },
   {

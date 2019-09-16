@@ -54,6 +54,10 @@
   box-shadow: 1px 1px 8px grey;
 }
 
+#projects .ant-card .ant-card-cover {
+  border-bottom: 1px solid #e8e8e8;
+}
+
 #projects .ant-card .ant-card-body {
   height: 100%;
 }
