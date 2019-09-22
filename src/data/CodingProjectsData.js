@@ -4,8 +4,8 @@ const CodingProjectsData = [
   {
     cover: [Img.CCBrowse, Img.CCUser, Img.CCCharity],
     title: 'CharityChain',
-    tags: ['Blockchain', 'React', 'Firebase'],
-    description: 'Tracking charity spendings on blockchain to help users make more informed donations and to increase transparency and accountability of charities; enables users to trace exactly what their donation is spent on',
+    tags: ['Ethereum', 'Solidity', 'React', 'Firebase'],
+    description: 'Tracking charity spendings on Ethereum blockchain to help users make more informed donations and to increase transparency and accountability of charities; enables users to trace exactly what their donation is spent on',
     description2: {
       award: false,
       text: 'Hack the North 2019'
