@@ -28,7 +28,7 @@ const CodingProjectCard: React.FC<CodingProjectCardProps> = (props) => {
       actions={item.links.demo ?
         [
           <a className="action-icon" href={item.links.github} target="_blank" rel="noopener noreferrer"><GitHub /></a>,
-          <a className="action-icon" href={item.links.github} target="_blank" rel="noopener noreferrer"><Monitor /></a>
+          <a className="action-icon" href={item.links.demo} target="_blank" rel="noopener noreferrer"><Monitor /></a>
         ] :
         [<a className="action-icon" href={item.links.github} target="_blank" rel="noopener noreferrer"><GitHub /></a>]                    
       }
