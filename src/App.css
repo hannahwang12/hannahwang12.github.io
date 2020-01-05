@@ -10,6 +10,11 @@
   box-shadow: none !important;
 }
 
+.ant-dropdown-menu .ant-dropdown-menu-item {
+  text-align: right;
+  padding-right: 3px;
+}
+
 .ant-dropdown-menu .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
   background-color: transparent !important;
 }
