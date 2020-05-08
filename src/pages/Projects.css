@@ -1,5 +1,4 @@
 #projects {
-  max-width: 832px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -27,6 +26,18 @@
 
 #projects .ant-tabs .ant-tabs-bar {
   margin-bottom: 30px;
+}
+
+#projects .ant-tabs .ant-tabs-tab span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+#projects .ant-tabs .ant-tabs-tab svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
 }
 
 #projects .ant-list {

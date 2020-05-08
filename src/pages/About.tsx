@@ -3,6 +3,9 @@ import { Mail, Linkedin, GitHub, FileText } from 'react-feather';
 import { Resume, Hannah } from '../assets';
 import './About.css';
 
+const languages: string[] = ['Python', 'Go', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'C', 'C++', 'SQL']
+const tools: string[] = ['Django', 'NodeJS', 'React', 'React Native', 'Redux',  'Vue.js', 'MongoDB', 'Neo4J', 'PostgreSQL', 'Google Cloud Platform', 'Git']
+
 const About: React.FC = () => {
   return (
     <div id="about">
@@ -12,7 +15,7 @@ const About: React.FC = () => {
         <div>
           <h3>Hello!</h3>
           <p>I'm Hannah and I'm a third-year student at the University of Waterloo in the Computer Science and Business Administration Double Degree program.
-            I'm experienced in full-stack web development and I enjoy constantly learning new things through working on personal projects and attending hackathons!</p>
+            I'm experienced in full-stack development and I enjoy constantly learning new things through working on personal projects and attending hackathons!</p>
           <div className="icons">
             <a href="mailto:hannah.wang@uwaterloo.ca"><Mail className="icon" /></a>
             <a href="https://www.linkedin.com/in/hannahwang" target="_blank" rel="noopener noreferrer"><Linkedin className="icon" /></a>

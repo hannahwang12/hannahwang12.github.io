@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs, List, Card } from 'antd';
-import { Monitor, Award } from 'react-feather';
+import { Code, Briefcase, Monitor, Award } from 'react-feather';
 import CodingProjectsData from '../data/CodingProjectsData.js';
 import BusinessProjectsData from '../data/BusinessProjectsData.js';
 import CodingProjectCard from '../components/CodingProjectCard';
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
     <div id="projects">
       <h1>Projects</h1>
       <Tabs defaultActiveKey="1">
-        <TabPane tab="Coding Projects" key="1">
+        <TabPane tab={<span><Code /> Coding Projects</span>} key="1">
           <List
             grid={{
               gutter: 30,
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
             )}
           />
         </TabPane>
-        <TabPane tab="Business Projects" key="2">
+        <TabPane tab={<span><Briefcase /> Business Projects</span>} key="2">
           <List
             grid={{
               gutter: 30,

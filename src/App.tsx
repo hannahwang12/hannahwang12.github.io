@@ -31,7 +31,7 @@ const App: React.FC = () => {
       <Experience />
       <Projects />
       <div className="bottom-bar">
-        <div>&copy; Hannah Wang 2019</div>
+        <div>&copy; Hannah Wang 2020</div>
         <div className="icons">
           <a href="mailto:hannah.wang@uwaterloo.ca"><Mail className="icon" /></a>
           <a href="https://www.linkedin.com/in/hannahwang" target="_blank" rel="noopener noreferrer"><Linkedin className="icon" /></a>
