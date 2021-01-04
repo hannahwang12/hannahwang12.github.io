@@ -1,60 +1,26 @@
-#experience {
-  max-width: 800px;
-  margin: auto;
+#experience .ant-collapse {
+  background-color: transparent;
 }
 
-#experience h2 {
-  margin-bottom: 0;
-}
-
-#experience .ant-timeline {
-  margin-left: 24px;
-  margin-top: 60px;
-}
-
-#experience .ant-timeline .link {
+#experience .ant-collapse-item .link {
   text-decoration-line: underline;
   text-decoration-style: dotted;
 }
 
-#experience .ant-timeline-item {
-  padding-bottom: 30px;
+#experience .ant-collapse-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  margin-bottom: 24px;
 }
 
-#experience .ant-timeline-item:hover {
-  color: black;
-  transition: all 0.3s;
+#experience .ant-collapse-content {
+  border-top: none;
 }
 
-#experience .ant-timeline-item:hover .timeline-dot {
-  height: 70px;
-  transition: all 0.3s;
+#experience .ant-collapse-content-box {
+  padding-top: 0;
 }
 
-#experience .ant-timeline-item-last {
-  padding-bottom: 0;
-}
-
-#experience .ant-timeline-item-last .ant-timeline-item-tail {
-  display: list-item;
-  height: calc(100% - 20px);
-}
-
-.timeline-dot {
-  height: 60px;
-}
-
-.timeline-dot.blueprint {
-  height: 60px;
-  padding: 4px;
-}
-
-#experience .ant-timeline-item-content {
-  text-align: left;
-  margin-left: 48px;
-  top: -22px;
-}
-
-#experience .ant-timeline-item-content ul {
+#experience .ant-collapse-item ul {
   padding-left: 18px;
 }

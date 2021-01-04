@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
             renderItem={(item : BusinessProject) => (
               <List.Item>
                 <Card
-                  cover={<img src={item.cover} />}
+                  cover={<img src={item.cover} alt={item.title} />}
                   actions={[<a className="action-icon" href={item.links.demo} target="_blank" rel="noopener noreferrer"><Monitor /></a>]}
                 >
                   <Card.Meta

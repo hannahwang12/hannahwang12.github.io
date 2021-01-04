@@ -31,6 +31,11 @@
   position: fixed;
   top: 36px;
   right: 36px;
+  color: grey;
+}
+
+.App .hamburger:hover {
+  color:#1890ff;
 }
 
 .App .nav {

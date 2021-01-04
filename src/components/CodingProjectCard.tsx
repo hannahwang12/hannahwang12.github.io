@@ -13,7 +13,6 @@ const CodingProjectCard: React.FC<CodingProjectCardProps> = (props) => {
   return (
     <Card
       onMouseEnter={() => {
-        carousel.current!.next();
         carousel.current!.innerSlider.autoPlay();
       }}
       onMouseLeave={() => {
@@ -22,7 +21,7 @@ const CodingProjectCard: React.FC<CodingProjectCardProps> = (props) => {
       }}
       cover={
         <Carousel ref={carousel}>
-          {item.cover.map((img: any) => <img src={img} />)}
+          {item.cover.map((img: any, i) => <img src={img} alt={item.title} key={i} />)}
         </Carousel>
       }
       actions={item.links.demo ?
@@ -34,7 +33,7 @@ const CodingProjectCard: React.FC<CodingProjectCardProps> = (props) => {
       }
     >
       <div className="ant-card-meta-title">{item.title}</div>
-      <div className="tags">{item.tags.map((tag: any) => <Tag>{tag}</Tag>)}</div>
+      <div className="tags">{item.tags.map((tag: any, i) => <Tag key={i}>{tag}</Tag>)}</div>
       <div className="ant-card-meta-description">{item.description}</div>
       {item.description2 ? 
         <div className="ant-card-meta-description description2">

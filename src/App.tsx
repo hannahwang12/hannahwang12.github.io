@@ -13,7 +13,7 @@ import 'antd/dist/antd.css';
 const App: React.FC = () => {
   const menu = (
     <Menu>
-      <Menu.Item><a href="#">Home</a></Menu.Item>
+      <Menu.Item><a href="#top">Home</a></Menu.Item>
       <Menu.Item><a href="#about">About Me</a></Menu.Item>
       <Menu.Item><a href="#experience">Experience</a></Menu.Item>
       <Menu.Item><a href="#projects">Projects</a></Menu.Item>
@@ -23,7 +23,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Dropdown overlay={menu} className="hamburger" overlayClassName="overlay">
-        <a><MenuIcon /></a>
+        <MenuIcon />
       </Dropdown>
       <Menu />
       <Home />

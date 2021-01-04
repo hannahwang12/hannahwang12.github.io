@@ -1,0 +1,22 @@
+.experience-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.experience-header h2 {
+  margin-bottom: 0;
+}
+
+.experience-header h4 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.experience-header img {
+  width: 80px;
+}
+
+.experience-header .experience-header-text {
+  padding-left: 16px;
+}

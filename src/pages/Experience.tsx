@@ -1,21 +1,50 @@
 import React from 'react';
-import { Timeline } from 'antd';
+import ExperienceHeader from '../components/ExperienceHeader';
+import { Collapse } from 'antd';
+import JaneStreet from '../assets/images/jane_street.png';
 import Postmates from '../assets/images/postmates.png';
 import Consensys from '../assets/images/consensys.png';
 import Blueprint from '../assets/images/blueprint.png';
 import Hubdoc from '../assets/images/hubdoc.jpg';
 import './Experience.css';
 
-const { Item } = Timeline;
+const { Panel } = Collapse;
 
 const Experience: React.FC = () => {
   return (
     <div id="experience">
       <h1>Experience</h1>
-      <Timeline>
-        <Item dot={<img className="timeline-dot" src={Postmates} />}>
-          <h2>Postmates</h2>
-          <h4>Software Engineering Intern | Jan 2020 - Apr 2020</h4>
+      <Collapse bordered={false}>
+        <Panel
+          key="1"
+          showArrow={false}
+          header={
+            <ExperienceHeader
+              imgSrc={JaneStreet}
+              imgStyle={{ padding: "6px" }}
+              company="Jane Street"
+              position="Software Engineering Intern"
+              dates="Sep 2020 - Dec 2020"
+            />
+          }
+        >
+          <ul>
+            <li>
+              Designed and built a dependencies graph UI and data visualisation tool for a large-scale distributed computation system
+              in OCaml, used by engineers and traders for training, development, and debugging
+            </li>
+            <li>
+              Developed an automated workflow that enables repurchase agreements to be recorded in Excel and materialised in a
+              PostgreSQL database using OCaml and Kafka, improving the scalability and effectiveness of financing operations
+            </li>
+          </ul>
+        </Panel>
+        <Panel
+          key="2"
+          showArrow={false}
+          header={<ExperienceHeader imgSrc={Postmates} company="Postmates" position="Software Engineering Intern" dates="Jan 2020 - Apr 2020" />}
+        >
+          <p>I was part of the Buyer Team which works on all aspects of the customer-facing Postmates app.</p>
           <ul>
             <li>
               Engineered a new “in-seat delivery” flow using Go, Python/Django, and Google Cloud Platform to enable Postmates
@@ -34,10 +63,16 @@ const Experience: React.FC = () => {
               to enhance customer experience and drive conversion, including a 24% increase in membership signups
             </li>
           </ul>
-        </Item>
-        <Item dot={<img className="timeline-dot" src={Consensys} />}>
-          <h2>ConsenSys</h2>
-          <h4>Full Stack Developer Intern | Jan 2019 - Apr 2019</h4>
+        </Panel>
+        <Panel
+          key="3"
+          showArrow={false}
+          header={<ExperienceHeader imgSrc={Consensys} company="ConsenSys" position="Full Stack Developer Intern" dates="Jan 2019 - Apr 2019" />}
+        >
+          <p>
+            Within ConsenSys, I worked on <a className="link" href="https://sobol.io/" target="_blank" rel="noopener noreferrer">Sobol</a>,
+            a platform built upon modern paradigms of work for organizations to map their team structures and to enhance collaboration.
+          </p>
           <ul>
             <li>
               Built and optimized NodeJS/Express API endpoints and queries to MongoDB and Neo4J databases,
@@ -51,10 +86,23 @@ const Experience: React.FC = () => {
               database architecture, and full stack development
             </li>
           </ul>
-        </Item>
-        <Item dot={<img className="timeline-dot blueprint" src={Blueprint} />}>
-          <h2>UW Blueprint</h2>
-          <h4>Project Developer | Sep 2018 - Apr 2019</h4>
+        </Panel>
+        <Panel
+          key="4"
+          showArrow={false}
+          header={
+            <ExperienceHeader
+              imgSrc={Blueprint}
+              imgStyle={{ padding: "6px" }}
+              company="UW Blueprint"
+              position="Project Developer"
+              dates="Sep 2018 - Apr 2019"
+            />
+          }
+        >
+          <p>
+            <a className="link" href="https://uwblueprint.org/" target="_blank" rel="noopener noreferrer">UW Blueprint</a> partners with
+            not-for-profit organizations to build technology solutions for social good.</p>
           <ul>
             <li>
               Developed a React Native photo-taking app
@@ -66,10 +114,12 @@ const Experience: React.FC = () => {
               at <a className="link" href="https://www.kidsability.ca/" target="_blank" rel="noopener noreferrer">KidsAbility Centre for Child Development</a>
             </li>
           </ul>
-        </Item>
-        <Item dot={<img className="timeline-dot" src={Hubdoc} />}>
-          <h2>Hubdoc</h2>
-          <h4>Software Developer Intern | May 2018 - Aug 2018</h4>
+        </Panel>
+        <Panel
+          key="5"
+          showArrow={false}
+          header={<ExperienceHeader imgSrc={Hubdoc} company="Hubdoc" position="Software Developer Intern" dates="May 2018 - Aug 2018" />}
+        >
           <ul>
             <li>
               Built, maintained, and debugged 700+ microservices to automatically fetch financial documents
@@ -82,10 +132,10 @@ const Experience: React.FC = () => {
               Implemented new features on company intranet to enhance data visualization using Backbone.js and PostgreSQL
             </li>
           </ul>
-        </Item>
-      </Timeline>
+        </Panel>
+      </Collapse>
     </div>
-  );
+  )
 }
 
 export default Experience;

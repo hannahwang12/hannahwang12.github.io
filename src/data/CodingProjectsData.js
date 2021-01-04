@@ -2,7 +2,7 @@ import * as Img from '../assets';
 
 const CodingProjectsData = [
   {
-    cover: [Img.CCBrowse, Img.CCUser, Img.CCCharity],
+    cover: [Img.CC, Img.CCBrowse, Img.CCUser, Img.CCCharity],
     title: 'CharityChain',
     tags: ['Ethereum', 'Solidity', 'React', 'Firebase'],
     description: 'Tracking charity spendings on Ethereum blockchain to help users make more informed donations and to increase transparency and accountability of charities; enables users to trace exactly what their donation is spent on',
